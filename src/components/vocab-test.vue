@@ -9,16 +9,14 @@
 
 <template>
   <div>
-    <div class="question">
-      <p>
-        What does "{{question}}" mean?
-      </p>
-      <ul>
-        <li v-for="word in questionAsked.list">
-          {{word.definition}}
-        </li>
-      </ul>
-    </div>
+    <p class="question">
+      What does "{{question}}" mean?
+    </p>
+    <ul class="answers">
+      <li v-for="word in questionAsked.list" class="answer">
+        <button class="answer__button">{{word.definition}}</button>
+      </li>
+    </ul>
   </div>
 </template>
 
@@ -90,6 +88,36 @@
         }, {
           word: 'synthetic',
           definition: 'not natural'
+        }, {
+          word: 'passive',
+          definition: 'inactive'
+        }, {
+          word: 'sedate',
+          definition: ['slow orbject or bing', 'send to sleep']
+        }, {
+          word: 'liability',
+          definition: 'makes more risky or hard'
+        }, {
+          word: 'maverick',
+          definition: 'someone who behaves differently/rebels'
+        }, {
+          word: 'renegade',
+          definition: 'someone who rebels'
+        }, {
+          word: 'craven',
+          definition: 'lacking in courage, a cowardly person'
+        }, {
+          word: 'flustered',
+          definition: 'lose your calm'
+        }, {
+          word: 'poised',
+          definition: 'a state of balance/calmness'
+        }, {
+          word: 'appropriate',
+          definition: ['the correct ation/thing', 'a-pro-pre-eight take something']
+        }, {
+          word: 'vulgar',
+          definition: 'rude'
         }],
         questionAsked: []
       };

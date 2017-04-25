@@ -8,7 +8,7 @@
 
 <template>
   <div class="page-header">
-    I am the header, woot.
+    Your score is: <span class="score">{{score}}</span>
   </div>
 </template>
 
@@ -17,6 +17,10 @@
     name: 'page-header',
     data () {
       return {
+        score: {
+          type: String,
+          default: '0'
+        }
       }
     }
   }
