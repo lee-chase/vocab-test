@@ -1,0 +1,23 @@
+<svg class="header--link-image" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<style type="text/css">
+  .ace {stroke: #ff1a1a; fill: #ff1a1a;}
+  .eyes {stroke: black; fill: black;}
+  .glasses {stroke: black; fill: #fabfed; fill-opacity: 0.4}
+  .mouth {stroke: black; fill: #1a1a1a; fill-opacity: 0.8}
+</style>
+<g>
+  <circle class="ace" cx="50" cy="50" r="40" stroke-width="2"/>
+  <g class="eyes">
+    <circle class="eye" cx="15" cy="57" r="5" stroke-width="1"/>
+    <circle class="eye" cx="50" cy="53" r="6" stroke-width="1"/>
+  </g>
+  <g class="glasses">
+    <circle class="lenses" cx="15" cy="53" r="12" stroke-width="2"/>
+    <circle class="lenses" cx="49" cy="48" r="14" stroke-width="2"/>
+    <path class="rim" d="M23.2,44 l13.3,-2.7 l-1.7,5 l-8.5,1.8z" stroke-width="2"/>
+    <path class="rim" d="M56.3,36 l24 ,-10 l14, 10 l-2,2 l-12.5,-8.5 l-20.3, 9z" stroke-width="2"/>
+  </g>
+  <circle class="mouth" cx="39" cy="75" r="8"></circle>
+</g>
+</svg>

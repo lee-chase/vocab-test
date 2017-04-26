@@ -10,116 +10,30 @@
 <template>
   <div>
     <p class="question">
-      What does "{{question}}" mean?
+      What does <em class="word">{{question}}</em> mean?
     </p>
     <ul class="answers">
-      <li v-for="word in questionAsked.list" class="answer">
-        <button class="answer__button">{{word.definition}}</button>
+      <li v-for="word, index in questionAsked.list" class="answer">
+        <button class="answer__button" @click="isCorrect(index, $event)" :disabled="disabledAnswer(index)"
+          :class="{'correct': correctAnswer(index)}">
+          {{word.definition}}
+        </button>
       </li>
     </ul>
   </div>
 </template>
 
 <script>
+  import words from '../modules/words';
+
   export default {
     name: 'vocab-test',
     data () {
       return {
-        words: [{
-          word: 'financial',
-          definition: 'Things to do with money'
-        }, {
-          word: 'commodity',
-          definition: 'something that can be bought or sold'
-        }, {
-          word: 'invaluable',
-          definition: 'priceless, worth a lot'
-        }, {
-          word: 'pertinent',
-          definition: 'relevant to something'
-        }, {
-          word: 'hefty',
-          definition: 'e.g. large, strong, heavy'
-        }, {
-          word: 'substantial',
-          definition: 'of considerable/large size'
-        }, {
-          word: 'nominal',
-          definition: 'of small or low value'
-        }, {
-          word: 'amble',
-          definition: 'walk slowly'
-        }, {
-          word: 'burden',
-          definition: 'a heavy load'
-        }, {
-          word: 'utter',
-          definition: ['express in sound or words', 'absolute or tatal']
-        }, {
-          word: 'muffle',
-          definition: 'deaden/quieten sound'
-        }, {
-          word: 'amplify',
-          definition: 'increase size, strength or loudness'
-        }, {
-          word: 'tactful',
-          definition: 'avoiding giving offence'
-        }, {
-          word: 'sincere',
-          definition: 'truthfully'
-        }, {
-          word: 'ridicule',
-          definition: 'to make fun of'
-        }, {
-          word: 'commend',
-          definition: 'praise'
-        }, {
-          word: 'abbeting',
-          definition: 'help or encourange to commit crime'
-        }, {
-          word: 'lucrative',
-          definition: 'very profitable'
-        }, {
-          word: 'vigour',
-          definition: 'to do energetically'
-        }, {
-          word: 'prosperous',
-          definition: 'wealthy'
-        }, {
-          word: 'synthetic',
-          definition: 'not natural'
-        }, {
-          word: 'passive',
-          definition: 'inactive'
-        }, {
-          word: 'sedate',
-          definition: ['slow orbject or bing', 'send to sleep']
-        }, {
-          word: 'liability',
-          definition: 'makes more risky or hard'
-        }, {
-          word: 'maverick',
-          definition: 'someone who behaves differently/rebels'
-        }, {
-          word: 'renegade',
-          definition: 'someone who rebels'
-        }, {
-          word: 'craven',
-          definition: 'lacking in courage, a cowardly person'
-        }, {
-          word: 'flustered',
-          definition: 'lose your calm'
-        }, {
-          word: 'poised',
-          definition: 'a state of balance/calmness'
-        }, {
-          word: 'appropriate',
-          definition: ['the correct ation/thing', 'a-pro-pre-eight take something']
-        }, {
-          word: 'vulgar',
-          definition: 'rude'
-        }],
-        questionAsked: []
+        words: words.words,
+        questionAsked: [],
+        correctlyAnswered: false,
+        disableAnswer: []
       };
     },
     computed: {
@@ -132,23 +46,25 @@
           }
         }
         let list = [];
+        let item = Math.floor(Math.random() * indexes.length);
+
         for (let i = 0; i < indexes.length; i++) {
           let def = this.words[indexes[i]].definition;
           if (typeof def !== 'string') {
             // array of options
-            console.log(typeof def);
             let iDef = Math.floor(Math.random() * def.length);
             def = def[iDef];
           }
-          console.log('hi2');
           list.push( {
             word: this.words[indexes[i]].word,
-            definition: def
+            definition: def,
+            correct: i === item
           })
+          this.disableAnswer[i] = false;
         }
         this.questionAsked = {
           list,
-          item: Math.floor(Math.random() * indexes.length)
+          item
         };
         return this.questionAsked.list[this.questionAsked.item].word;
       }
@@ -158,11 +74,66 @@
     created() {
     },
     methods: {
+      correctAnswer(index) {
+        return this.questionAsked.list[index].correct;
+      },
+      disabledAnswer(index) {
+        let disabled;
+        try {
+          disabled = this.disableAnswer[index];
+        } catch (e) {
+          disabled = false;
+        }
+        return disabled;
+      },
+      isCorrect(index, event) {
+        this.disableAnswer[index] = true;
+        if (index === this.questionAsked.item) {
+          this.$emit('correct');
+        } else {
+          this.$emit('incorrect');
+        }
+        this.$forceUpdate();
+      }
     }
   }
 
 </script>
 
 <style lang="scss">
+.question {
+  width: 100%;
+}
 
+.word {
+  font-style: normal;
+  font-weight: bold;
+}
+
+.answers {
+  padding: 0;
+}
+
+.answer {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.answer__button {
+  width: 100%;
+  height: 40px;
+  background-color: #f1f1f1;
+
+  &:disabled {
+    background-image: url(~../assets/images/oh.svg);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+
+    &.correct {
+      background-image: url(~../assets/images/ace.svg);
+    }
+  }
+}
 </style>

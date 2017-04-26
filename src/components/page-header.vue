@@ -15,12 +15,9 @@
 <script>
   export default {
     name: 'page-header',
+    props: ['score'],
     data () {
       return {
-        score: {
-          type: String,
-          default: '0'
-        }
       }
     }
   }

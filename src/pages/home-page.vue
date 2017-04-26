@@ -1,9 +1,9 @@
 <template>
   <div id="home-page">
-    <page-header></page-header>
+    <page-header :score="score"></page-header>
     <main class="home-page__content" role="main">
       <h1>vocab-test home page</h1>
-      <vocab-test></vocab-test>
+      <vocab-test class="vocab-test" @correct="mark(true)" @incorrect="mark(false)"></vocab-test>
     </main>
   </div>
 </template>
@@ -16,9 +16,15 @@
     name: 'home-page',
     data () {
       return {
+        'score': '0'
       };
     },
     methods: {
+      mark(correct) {
+        if (correct) {
+          this.score++;
+        }
+      }
     },
     components: {
       'page-header': PageHeader,
@@ -30,5 +36,11 @@
 <style lang="scss">
   .home-page__content {
     padding: 0 50px;
+  }
+
+  .vocab-test {
+    max-width: 100%;
+    width: 600px;
+    margin: 0 auto;
   }
 </style>
