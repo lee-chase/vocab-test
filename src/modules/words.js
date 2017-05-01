@@ -88,7 +88,7 @@ export default {
     definition: 'a state of balance/calmness'
   }, {
     word: 'appropriate',
-    definition: ['the correct ation/thing', 'a-pro-pre-eight take something']
+    definition: ['the correct action/thing', 'a-pro-pre-eight take something']
   }, {
     word: 'vulgar',
     definition: 'rude'

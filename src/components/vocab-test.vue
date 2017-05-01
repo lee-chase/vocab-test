@@ -10,21 +10,25 @@
 <template>
   <div>
     <p class="question">
-      What does <em class="word">{{question}}</em> mean?
+      What does <em class="word">{{questionAsked.list[this.questionAsked.item].word}}</em> mean?
     </p>
     <ul class="answers">
       <li v-for="word, index in questionAsked.list" class="answer">
-        <button class="answer__button" @click="isCorrect(index, $event)" :disabled="disabledAnswer(index)"
-          :class="{'correct': correctAnswer(index)}">
+        <answer-button class="answer__button" @click="isCorrect(index, $event)" :answer-icon="setIcon(index)" :disable-answer="correctlyAnswered">
           {{word.definition}}
-        </button>
+        </answer-button>
       </li>
     </ul>
+    <button @click="nextQuestion()" :disabled="!correctlyAnswered">Next word</button>
+    <audio id="audio-correct">
+      <source src="../assets/sounds/fireworks.mp3" type="audio/mpeg">
+    </audio>
   </div>
 </template>
 
 <script>
   import words from '../modules/words';
+  import answerButton from '../components/answer-button.vue';
 
   export default {
     name: 'vocab-test',
@@ -33,11 +37,22 @@
         words: words.words,
         questionAsked: [],
         correctlyAnswered: false,
-        disableAnswer: []
+        audio: {}
       };
     },
+    components: {
+      'answer-button': answerButton
+    },
     computed: {
-      question() {
+    },
+    mounted() {
+      // this.audio.fireworks = $el.getElementById('audio-fireworks');
+      this.nextQuestion();
+    },
+    created() {
+    },
+    methods: {
+      nextQuestion() {
         let indexes = [];
         while (indexes.length < 4) {
           let newIndex = Math.floor(Math.random() * this.words.length);
@@ -60,40 +75,29 @@
             definition: def,
             correct: i === item
           })
-          this.disableAnswer[i] = false;
         }
         this.questionAsked = {
           list,
           item
         };
-        return this.questionAsked.list[this.questionAsked.item].word;
-      }
-    },
-    mounted() {
-    },
-    created() {
-    },
-    methods: {
+        this.correctlyAnswered = false;
+      },
       correctAnswer(index) {
         return this.questionAsked.list[index].correct;
       },
-      disabledAnswer(index) {
-        let disabled;
-        try {
-          disabled = this.disableAnswer[index];
-        } catch (e) {
-          disabled = false;
-        }
-        return disabled;
+      setIcon(index) {
+        return index === this.questionAsked.item ? 'happy' : 'sad';
       },
       isCorrect(index, event) {
-        this.disableAnswer[index] = true;
         if (index === this.questionAsked.item) {
+          if (this.audio.fireworks) {
+            this.audio.fireworks.play();
+          }
+          this.correctlyAnswered = true;
           this.$emit('correct');
         } else {
           this.$emit('incorrect');
         }
-        this.$forceUpdate();
       }
     }
   }
@@ -123,17 +127,6 @@
   width: 100%;
   height: 40px;
   background-color: #f1f1f1;
-
-  &:disabled {
-    background-image: url(~../assets/images/oh.svg);
-    background-position: center right;
-    background-repeat: no-repeat;
-    background-size: contain;
-    border: none;
-
-    &.correct {
-      background-image: url(~../assets/images/ace.svg);
-    }
-  }
+  border: none;
 }
 </style>

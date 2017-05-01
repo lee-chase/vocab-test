@@ -1,6 +1,6 @@
 <template>
   <div id="home-page">
-    <page-header :score="score"></page-header>
+    <page-header :score="score" :correct="correct" :incorrect="incorrect"></page-header>
     <main class="home-page__content" role="main">
       <h1>vocab-test home page</h1>
       <vocab-test class="vocab-test" @correct="mark(true)" @incorrect="mark(false)"></vocab-test>
@@ -16,13 +16,19 @@
     name: 'home-page',
     data () {
       return {
-        'score': '0'
+        'score': '0',
+        'correct': '0',
+        'incorrect': '0'
       };
     },
     methods: {
       mark(correct) {
         if (correct) {
           this.score++;
+          this.correct++;
+        } else {
+          this.score--;
+          this.incorrect++;
         }
       }
     },

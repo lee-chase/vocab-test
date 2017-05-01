@@ -31,7 +31,7 @@ module.exports = {
         // exclude: /node_modules\/(?!(@console\/bluemix-components\/consumables)\/).*/
       },
       {
-        test: /\.(png|jpg|gif|svg|woff|woff2)$/,
+        test: /\.(mp3|png|jpg|gif|svg|woff|woff2)$/,
         loader: 'file-loader',
         options: {
           name: '[name].[ext]?[hash]'

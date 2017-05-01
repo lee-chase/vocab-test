@@ -8,14 +8,15 @@
 
 <template>
   <div class="page-header">
-    Your score is: <span class="score">{{score}}</span>
+    Your score: {{score}}, correct: {{correct}}, incorrect: {{incorrect}}
+
   </div>
 </template>
 
 <script>
   export default {
     name: 'page-header',
-    props: ['score'],
+    props: ['score', 'correct', 'incorrect'],
     data () {
       return {
       }
