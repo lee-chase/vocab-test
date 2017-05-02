@@ -14,15 +14,16 @@
     </p>
     <ul class="answers">
       <li v-for="word, index in questionAsked.list" class="answer">
-        <answer-button class="answer__button" @click="isCorrect(index, $event)" :answer-icon="setIcon(index)" :disable-answer="correctlyAnswered">
+        <answer-button class="answer__button" @click="isCorrect(index, $event)" :answer-icon="setIcon(index)" :disable-answer="correctlyAnswered"
+          :show-result="questionAsked.list[index].clicked">
           {{word.definition}}
         </answer-button>
       </li>
     </ul>
     <button @click="nextQuestion()" :disabled="!correctlyAnswered">Next word</button>
-    <audio id="audio-correct">
+    <!-- <audio id="audio-correct">
       <source src="../assets/sounds/fireworks.mp3" type="audio/mpeg">
-    </audio>
+    </audio> -->
   </div>
 </template>
 
@@ -47,9 +48,9 @@
     },
     mounted() {
       // this.audio.fireworks = $el.getElementById('audio-fireworks');
-      this.nextQuestion();
     },
     created() {
+      this.nextQuestion();
     },
     methods: {
       nextQuestion() {
@@ -73,7 +74,8 @@
           list.push( {
             word: this.words[indexes[i]].word,
             definition: def,
-            correct: i === item
+            correct: i === item,
+            clicked: false
           })
         }
         this.questionAsked = {
@@ -90,14 +92,15 @@
       },
       isCorrect(index, event) {
         if (index === this.questionAsked.item) {
-          if (this.audio.fireworks) {
-            this.audio.fireworks.play();
-          }
+          // if (this.audio.fireworks) {
+          //   this.audio.fireworks.play();
+          // }
           this.correctlyAnswered = true;
           this.$emit('correct');
         } else {
           this.$emit('incorrect');
         }
+        this.questionAsked.list[index].clicked = true;
       }
     }
   }

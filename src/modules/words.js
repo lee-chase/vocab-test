@@ -82,7 +82,7 @@ export default {
     definition: 'lacking in courage, a cowardly person'
   }, {
     word: 'flustered',
-    definition: 'lose your calm'
+    definition: 'lost your calm'
   }, {
     word: 'poised',
     definition: 'a state of balance/calmness'

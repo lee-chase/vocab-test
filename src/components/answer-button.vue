@@ -1,5 +1,5 @@
 <template>
-  <button @click="clicked" :disabled="disabledAnswer" :class="[clickedAnswer ? 'clicked ' + answerIcon : '']">
+  <button @click="clicked" :disabled="disabledAnswer" :class="[showResult ? 'clicked ' + answerIcon : '']">
     <slot></slot>
   </button>
 </template>
@@ -7,7 +7,6 @@
   export default {
     data() {
       return {
-        clickedAnswer: false
       };
     },
     name: 'answer-button',
@@ -19,6 +18,10 @@
       disableAnswer: {
         type: Boolean,
         default: false
+      },
+      showResult: {
+        type: Boolean,
+        default: false
       }
     },
     computed: {
@@ -28,7 +31,6 @@
     },
     methods: {
       clicked() {
-        this.clickedAnswer = true;
         this.$emit('click', this.$event);
       }
     }
