@@ -20,10 +20,10 @@
         </answer-button>
       </li>
     </ul>
-    <button @click="nextQuestion()" :disabled="!correctlyAnswered">Next word</button>
-    <!-- <audio id="audio-correct">
-      <source src="../assets/sounds/fireworks.mp3" type="audio/mpeg">
-    </audio> -->
+    <button @click="nextQuestion()" :disabled="!correctlyAnswered" class="next-question">Next word</button>
+    <audio class="audio-letsgo">
+      <source :src="require('../assets/sounds/lets-go.mp3')" type="audio/mpeg">
+    </audio>
   </div>
 </template>
 
@@ -47,7 +47,7 @@
     computed: {
     },
     mounted() {
-      // this.audio.fireworks = $el.getElementById('audio-fireworks');
+      this.audio.letsgo = this.$el.querySelectorAll('.audio-letsgo')[0];
     },
     created() {
       this.nextQuestion();
@@ -92,9 +92,10 @@
       },
       isCorrect(index, event) {
         if (index === this.questionAsked.item) {
-          // if (this.audio.fireworks) {
-          //   this.audio.fireworks.play();
-          // }
+          console.dir(this.audio);
+          if (this.audio.letsgo) {
+            this.audio.letsgo.play();
+          }
           this.correctlyAnswered = true;
           this.$emit('correct');
         } else {
@@ -109,7 +110,10 @@
 
 <style lang="scss">
 .question {
-  width: 100%;
+  padding: 10px;
+  display: inline-block;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, .7);
 }
 
 .word {
@@ -129,7 +133,25 @@
 .answer__button {
   width: 100%;
   height: 40px;
-  background-color: #f1f1f1;
+  background-color: rgba(235, 227, 247, 1);
   border: none;
+
+  &:disabled {
+    background-color: rgba(250, 250, 250, .5);
+  }
+}
+
+.next-question {
+  border: none;
+  font-size: 12px;
+  height: 40px;
+  padding: 0 30px;
+  border-radius: 3px;
+  float: right;
+  background-color: rgba(55, 255, 55, 1);
+
+  &:disabled {
+    background-color: rgba(55, 255, 55, .1);
+  }
 }
 </style>

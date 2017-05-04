@@ -8,8 +8,15 @@
 
 <template>
   <div class="page-header">
-    Your score: {{score}}, correct: {{correct}}, incorrect: {{incorrect}}
-
+    <div class="score-card">
+      Your score: {{score}}
+    </div>
+    <div class="score-card">
+      Correct: {{correct}}
+    </div>
+    <div class="score-card">
+      Incorrect: {{incorrect}}
+    </div>
   </div>
 </template>
 
@@ -25,5 +32,14 @@
 </script>
 
 <style lang="scss">
-
+  .page-header {
+    display: flex;
+    justify-content: center;
+  }
+  .score-card {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, .7);
+  }
 </style>

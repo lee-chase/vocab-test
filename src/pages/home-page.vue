@@ -40,6 +40,34 @@
 </script>
 
 <style lang="scss">
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  #app {
+    padding: 0;
+  }
+
+  #home-page {
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+
+    background: url(~../assets/images/purple-sky.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  h1 {
+    visibility: hidden;
+    position: absolute;
+    left: -9999px
+  }
+
   .home-page__content {
     padding: 0 50px;
   }
