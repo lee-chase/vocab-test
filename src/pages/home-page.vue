@@ -57,7 +57,7 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    padding: 10% 0;
+    padding: 120px 0;
     box-sizing: border-box;
 
     background: url(~../assets/images/purple-sky.jpg);
