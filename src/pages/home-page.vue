@@ -43,6 +43,7 @@
   body {
     margin: 0;
     padding: 0;
+    font-size: 18px;
   }
 
   #app {
@@ -69,7 +70,7 @@
   }
 
   .home-page__content {
-    padding: 0 50px;
+    padding: 0 20px;
   }
 
   .vocab-test {

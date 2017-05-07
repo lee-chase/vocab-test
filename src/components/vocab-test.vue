@@ -132,7 +132,7 @@
 
 .answer__button {
   width: 100%;
-  height: 40px;
+  min-height: 40px;
   background-color: rgba(235, 227, 247, 1);
   border: none;
 
@@ -143,7 +143,6 @@
 
 .next-question {
   border: none;
-  font-size: 12px;
   height: 40px;
   padding: 0 30px;
   border-radius: 3px;

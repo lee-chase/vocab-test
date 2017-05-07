@@ -1,4 +1,11 @@
-<template>
+<!-- <template>
+  <ul class="audio-tracks">
+    <li v-for="word, index in ist"
+    <audio class="audio-letsgo">
+      <source :src="require('../assets/sounds/lets-go.mp3')" type="audio/mpeg">
+    </audio>
+
+  </ul>
   <button @click="clicked" :disabled="disabledAnswer" :class="[showResult ? 'clicked ' + answerIcon : '']">
     <slot></slot>
   </button>
@@ -41,7 +48,7 @@
 button {
   background-color: #fafafa;
   border: 1px solid #aaaaaa;
-  font-size: 14px;
+  font-size: 12px;
   padding: 0 30px;
   border-radius: 3px;
 
@@ -60,4 +67,4 @@ button {
     }
   }
 }
-</style>
+</style> -->
