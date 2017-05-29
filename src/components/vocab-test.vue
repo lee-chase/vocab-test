@@ -14,7 +14,7 @@
     </p>
     <ul class="answers">
       <li v-for="word, index in questionAsked.list" class="answer">
-        <answer-button class="answer__button" @click="isCorrect(index, $event)" :answer-icon="setIcon(index)" :disable-answer="correctlyAnswered"
+        <answer-button class="answer__button" @click="isCorrect(index, $event)" :bar="foo" :answer-icon="setIcon(index)" :disable-answer="correctlyAnswered"
           :show-result="questionAsked.list[index].clicked">
           {{word.definition}}
         </answer-button>
@@ -38,7 +38,8 @@
         words: words.words,
         questionAsked: [],
         correctlyAnswered: false,
-        audio: {}
+        audio: {},
+        foo: 0
       };
     },
     components: {
@@ -91,6 +92,8 @@
         return index === this.questionAsked.item ? 'happy' : 'sad';
       },
       isCorrect(index, event) {
+        console.dir(event);
+
         if (index === this.questionAsked.item) {
           console.dir(this.audio);
           if (this.audio.letsgo) {
