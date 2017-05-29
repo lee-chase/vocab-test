@@ -1,19 +1,22 @@
 export default {
   words: [{
     word: 'financial',
-    definition: 'Things to do with money'
+    definition: 'Things to do with money',
+    synonyms: ['money', 'budget']
   }, {
     word: 'commodity',
-    definition: 'Something that can be bought or sold'
+    definition: 'Raw material that can be bought or sold',
   }, {
     word: 'invaluable',
-    definition: 'priceless, worth a lot'
+    definition: 'priceless, worth a lot',
+    synonyms: ['priceless']
   }, {
     word: 'pertinent',
-    definition: 'relevant to something'
+    definition: 'relevant to something',
+    synonyms: ['relevant', 'appropriate'],
   }, {
     word: 'hefty',
-    definition: 'large, strong, heavy'
+    definition: 'large and heavy',
   }, {
     word: 'substantial',
     definition: 'of considerable/large size'
@@ -22,9 +25,9 @@ export default {
     definition: 'of small or low value'
   }, {
     word: 'amble',
-    definition: 'walk slowly'
+    definition: 'to walk slowly'
   }, {
-    word: 'burden colour',
+    word: 'burden',
     definition: 'a heavy load'
   }, {
     word: 'utter',
@@ -40,7 +43,7 @@ export default {
     definition: 'avoiding giving offence'
   }, {
     word: 'sincere',
-    definition: 'truthfully'
+    definition: 'truthful'
   }, {
     word: 'ridicule',
     definition: 'to make fun of'
@@ -73,10 +76,10 @@ export default {
     definition: 'Something that makes a task harder'
   }, {
     word: 'maverick',
-    definition: 'someone who behaves differently/rebels'
+    definition: 'an independent or different minded person'
   }, {
     word: 'renegade',
-    definition: 'someone who rebels'
+    definition: 'someone who rebels possibly breaking rules'
   }, {
     word: 'craven',
     definition: 'lacking in courage, a cowardly person'
@@ -88,7 +91,7 @@ export default {
     definition: 'a state of balance/calmness'
   }, {
     word: 'appropriate',
-    definition: 'the correct action/thing'
+    definition: ['the correct action/thing', 'take something for yoursel, often without permission']
   }, {
     word: 'vulgar',
     definition: 'rude'
@@ -109,7 +112,7 @@ export default {
     definition: 'a quiet sound or whisper'
   }, {
     word: 'slovenly',
-    definition: 'appears untidy or dirty'
+    definition: 'untidy or dirty'
   }, {
     word: 'pardon',
     definition: 'to forgive'
@@ -133,13 +136,13 @@ export default {
     definition: ['recently or barely completed something', 'right or balanced action usually punishment']
   }, {
     word: 'detest',
-    definition: 'strong dislike or hate'
+    definition: 'a strong dislike or hate'
   }, {
     word: 'ambivalent',
-    definition: 'do not care about something'
+    definition: 'to not care about something or an outcome'
   }, {
     word: 'averse',
-    definition: 'do not like something'
+    definition: 'to not like something'
   }, {
     word: 'courteous',
     definition: 'respectful and polite'
@@ -154,7 +157,7 @@ export default {
     definition: 'use or develop a resource, sometimes too much'
   }, {
     word: 'contract',
-    definition: ['make smaller', 'get ill', 'document two or more agree to']
+    definition: ['make smaller', 'catch an illness e.g. a cold', 'document two or more agree to']
   }, {
     word: 'frivolous',
     definition: 'seeking pleasure in light hearted way'
@@ -163,7 +166,7 @@ export default {
     definition: 'branch of medicine for female reproductive system'
   }, {
     word: 'insubordinate',
-    definition: 'disobedient, rude, rebellious'
+    definition: 'Defiant of authority; disobedient to orders'
   }, {
     word: 'cynical',
     definition: 'take advantage of others misfortune'
@@ -230,5 +233,14 @@ export default {
   }, {
     word: 'flamboyant',
     definition: 'extravagant'
+  },{
+    word: 'simmer',
+    definition: ['Heat/cook just below boiling in water', 'suppress anger']
+  }, {
+    word: 'poach',
+    definition: ['steal poultry', 'cook in water']
+  }, {
+    word: 'roast',
+    definition: ['cook in oven using oil', 'a severe telling off']
   }]
 };
