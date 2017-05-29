@@ -242,5 +242,8 @@ export default {
   }, {
     word: 'roast',
     definition: ['cook in oven using oil', 'a severe telling off']
+  }, {
+    word: 'aptitued',
+    definition: 'A natural ability to do something, naturally bendy.'
   }]
 };
