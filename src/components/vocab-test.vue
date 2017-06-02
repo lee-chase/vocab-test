@@ -21,8 +21,20 @@
       </li>
     </ul>
     <button @click="nextQuestion()" :disabled="!correctlyAnswered" class="next-question">Next word</button>
-    <audio class="audio-letsgo">
+    <audio class="audio-letsgo" ref='letsgo'>
       <source :src="require('../assets/sounds/lets-go.mp3')" type="audio/mpeg">
+    </audio>
+    <audio class="audio-uh-oh" ref='uhoh'>
+      <source :src="require('../assets/sounds/uh-oh-short.mp3')" type="audio/mpeg">
+    </audio>
+    <audio class="audio-fireworks" ref='fireworks'>
+      <source :src="require('../assets/sounds/fireworks.mp3')" type="audio/mpeg">
+    </audio>
+    <audio class="audio-applause" ref='applause'>
+      <source :src="require('../assets/sounds/applause.mp3')" type="audio/mpeg">
+    </audio>
+    <audio class="audio-trumpe" ref='trump'>
+      <source :src="require('../assets/sounds/fail-trump.mp3')" type="audio/mpeg">
     </audio>
   </div>
 </template>
@@ -38,8 +50,8 @@
         words: words.words,
         questionAsked: [],
         correctlyAnswered: false,
-        audio: {},
-        foo: 0
+        foo: 0,
+        score: 0,
       };
     },
     components: {
@@ -48,7 +60,6 @@
     computed: {
     },
     mounted() {
-      this.audio.letsgo = this.$el.querySelectorAll('.audio-letsgo')[0];
     },
     created() {
       this.nextQuestion();
@@ -56,10 +67,14 @@
     methods: {
       nextQuestion() {
         let indexes = [];
+        let synonyms = [];
         while (indexes.length < 4) {
           let newIndex = Math.floor(Math.random() * this.words.length);
-          if (!indexes.includes(newIndex)) {
+          if (!indexes.includes(newIndex) && synonyms.every((item) => item !== this.words[newIndex].word)) {
             indexes.push(newIndex);
+            if (this.words[newIndex].synonyms) {
+              synonyms = synonyms.concat(this.words[newIndex].synonyms);
+            }
           }
         }
         let list = [];
@@ -92,16 +107,18 @@
         return index === this.questionAsked.item ? 'happy' : 'sad';
       },
       isCorrect(index, event) {
-        console.dir(event);
-
         if (index === this.questionAsked.item) {
-          console.dir(this.audio);
-          if (this.audio.letsgo) {
-            this.audio.letsgo.play();
+          this.score++;
+          if (this.score % 50 === 0) {
+            this.$refs.fireworks.play();
+          } else {
+            this.$refs.letsgo.play();
           }
           this.correctlyAnswered = true;
           this.$emit('correct');
         } else {
+          this.score--;
+          this.$refs.uhoh.play();
           this.$emit('incorrect');
         }
         this.questionAsked.list[index].clicked = true;
