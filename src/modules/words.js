@@ -243,7 +243,99 @@ export default {
     word: 'roast',
     definition: ['cook in oven using oil', 'a severe telling off']
   }, {
-    word: 'aptitued',
+    word: 'aptitude',
     definition: 'A natural ability to do something, naturally bendy.'
+  }, {
+    word: 'porous',
+    definition: 'absorbent like a sponge'
+  }, {
+    word: 'permeable',
+    definition: 'material that allows liquids or gases through'
+  }, {
+    word: 'procure',
+    definition: 'to obtain something'
+  }, {
+    word: 'trivial',
+    definition: 'of little value or importance'
+  }, {
+    word: 'worldly',
+    definition: 'wise and sophisticated'
+  }, {
+    word: 'theory',
+    definition: 'a model describing how something might work'
+  }, {
+    word: 'theoretical',
+    definition: 'something that might be possible'
+  }, {
+    word: 'profound',
+    definition: 'something deeply meaningful'
+  }, {
+    word: 'quirky',
+    definition: 'being peculiar or unconventional'
+  }, {
+    word: 'flippant',
+    definition: 'not showing serious or respectful attitude'
+  }, {
+    word: 'passive',
+    definition: 'inactive/doing nothing'
+  }, {
+    word: 'arduous',
+    definition: 'involving a lot of effort, difficult and tiring'
+  }, {
+    word: 'forfeit',
+    definition: 'lose something as a consequence of another action'
+  }, {
+    word: 'dazed',
+    definition: 'shocked, unable to think or react properly'
+  }, {
+    word: 'abundance',
+    definition: 'plenty of something'
+  }, {
+    word: 'arbitrary',
+    definition: ['choice based on random or without thought', 'unrestrained use of authority']
+  }, {
+    word: 'monotonous',
+    definition: 'something long and boring'
+  }, {
+    word: 'ambient',
+    definition: 'relating to the immediate surroundings'
+  }, {
+    word: 'morose',
+    definition: 'sad and ill tempered',
+    synonyms: ['sullen']
+  }, {
+    word: 'sullen',
+    definition: 'bad tempered and sulky',
+    synonyms: ['morose']
+  }, {
+    word: 'frigid',
+    definition: 'cold and stiff'
+  }, {
+    word: 'temperate',
+    definition: 'an area with mild temperatures'
+  }, {
+    word: 'quizzical',
+    definition: 'someone experiencing mild or amused puzzlement'
+  }, {
+    word: 'gregarious',
+    definition: 'someone fond of social company'
+  }, {
+    word: 'pallid',
+    definition: 'pale, typically because of poor health'
+  }, {
+    word: 'radiant',
+    definition: 'shining or glowing brightly'
+  }, {
+    word: 'prolific',
+    definition: 'someone or thing producing a lot of output'
+  }, {
+    word: 'apathy',
+    definition: 'lack of interest or concern'
+  }, {
+    word: 'stolid',
+    definition: 'calm and dependable'
+  }, {
+    word: 'obtrude',
+    definition: 'become noticeable in an unwelcome way'
   }]
 };
