@@ -337,5 +337,53 @@ export default {
   }, {
     word: 'obtrude',
     definition: 'become noticeable in an unwelcome way'
+  },{
+    word: 'operates',
+    definition: 'functions...',
+  },{
+    word: 'afield',
+    definition: '...',
+  },{
+    word: 'concede',
+    definition: 'to accept the situation/defeat',
+  },{
+    word: 'daunting',
+    definition: 'Seeming difficult to deal with in prospect; intimidating.',
+  },{
+    word: 'dire',
+    definition: ['Extremely serious or urgent', 'Of poor quality'],
+  },{
+    word: 'talon',
+    definition: 'A claw, especially one belonging to a bird of prey.',
+  },{
+    word: 'ally',
+    definition: 'A person or organisation that cooperates with or helps another in a particular activity.',
+  },{
+    word: 'reserved',
+    definition: ['Slow to reveal emotion or opinions.', 'Kept specially for a particular person.'],
+  },{
+    word: 'industrious',
+    definition: 'Diligent and hard-working.',
+  },{
+    word: 'stunted',
+    definition: 'Prevent from growing or developing properly.',
+  },{
+    word: 'meagre',
+    definition: 'lacking in quantity or quality',
+  },{
+    word: 'copious',
+    definition: 'A plentiful/abundant supply',
+  },{
+    word: 'dearth',
+    definition: 'A scarcity or lack of something.',
+  },{
+    word: 'entice',
+    definition: 'Attract or tempt by offering gifts or advantage.',
+  },{
+    word: 'overt',
+    definition: 'Done or shown openly; plainly apparent.',
+  }, {
+    word: 'diligent',
+    definition: "Having or showing care and conscientiousness in one's work or duties."
   }]
 };

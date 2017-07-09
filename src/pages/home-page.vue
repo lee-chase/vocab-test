@@ -18,11 +18,22 @@
       return {
         'score': '0',
         'correct': '0',
-        'incorrect': '0'
+        'incorrect': '0',
+        lastAnswerDate: -1,
       };
     },
     methods: {
       mark(correct) {
+        let dateObj = new Date();
+        let now = dateObj.getTime();
+
+        if (this.lastAnswerDate < 0 || (now - this.lastAnswerDate > 7200000)) {
+          // if more than two hour reset the scores
+          this.score = 0;
+          this.correct = 0;
+          this.incorrect = 0;
+          this.lastAnswerDate = now;
+        }
         if (correct) {
           this.score++;
           this.correct++;
@@ -36,7 +47,7 @@
       'page-header': PageHeader,
       'vocab-test': vocabTest
     }
-  }
+  };
 </script>
 
 <style lang="scss">
