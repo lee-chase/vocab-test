@@ -259,7 +259,7 @@ export default {
     definition: 'of little value or importance'
   }, {
     word: 'worldly',
-    definition: 'wise and sophisticated'
+    definition: 'wise, sophisticated, well travelled'
   }, {
     word: 'theory',
     definition: 'a model describing how something might work'
@@ -337,9 +337,6 @@ export default {
   },{
     word: 'operates',
     definition: 'functions...',
-  },{
-    word: 'afield',
-    definition: '...',
   },{
     word: 'concede',
     definition: 'to accept the situation/defeat',
