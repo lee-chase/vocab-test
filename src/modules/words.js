@@ -423,7 +423,7 @@ export default {
     definition: 'Having or characterized by peculiar or unexpected traits or aspects.'
   }, {
     word: 'Austere',
-    definition: []'Having a plain and unadorned appearance', 'Severe or strict in manner or attitude']
+    definition: ['Having a plain and unadorned appearance', 'Severe or strict in manner or attitude']
   }, {
     word: 'Abundance',
     definition: 'Something there is plenty of, perhaps more than needed'
