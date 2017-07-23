@@ -385,5 +385,83 @@ export default {
   }, {
     word: 'diligent',
     definition: "Having or showing care and conscientiousness in one's work or duties."
+  }, {
+    word: 'Solely',
+    definition: 'Not involving anyone or anything else; only.'
+  }, {
+    word: 'Erected',
+    definition: [
+      'Rigidly upright or straight',
+      'Put together and set upright (a building, wall, or other structure)'
+    ]
+  }, {
+    word: 'Solely',
+    definition: 'Not involving anyone or anything else; only.'
+  }, {
+    word: 'Resilient',
+    definition: 'Able to withstand or recover quickly from difficult conditions'
+  }, {
+    word: 'Endorse',
+    definition: ['Declare one&apos;s public approval or support of',
+     'Sign a cheque',
+     'Add penalty points to a license'
+   ],
+  }, {
+    word: 'Procure',
+    definition: 'Obtain or purchase with care or effort'
+  }, {
+    word: 'Purchase',
+    definition: 'Get a grip on something or buy something'
+  }, {
+    word: 'Plant',
+    definition: 'Large industrial building e.g. power plant'
+  }, {
+    word: 'Light',
+    definition: 'Of entertainment that is not serious'
+  }, {
+    word: 'Forfeit',
+    definition: 'Punishment or charge for failing a task'
+  }, {
+    word: 'Worldly',
+    definition: 'Wise or well travelled'
+  }, {
+    word: 'Quirky',
+    definition: 'Having or characterized by peculiar or unexpected traits or aspects.'
+  }, {
+    word: 'Austere',
+    definition: []'Having a plain and unadorned appearance', 'Severe or strict in manner or attitude']
+  }, {
+    word: 'Abundance',
+    definition: 'Something there is plenty of, perhaps more than needed'
+  }, {
+    word: 'Deficit',
+    definition: 'The amount of something below that which is needed'
+  }, {
+    word: 'Gaunt',
+    definition: 'Lean and haggard, especially because of suffering, hunger, or age'
+  }, {
+    word: 'Flamboyant',
+    definition: 'Showy or exaggerated'
+  }, {
+    word: 'Arbitrary',
+    definition: 'A decision taken without reason or system'
+  }, {
+    word: 'Monotonous',
+    definition: 'Dull, tedious, and repetitious; lacking in variety and interest.'
+  }, {
+    word: 'Ambient',
+    definition: 'Relating to the immediate surroundings of something.'
+  }, {
+    word: 'Droll',
+    definition: 'Curious or unusual in a way that provokes dry amusement'
+  }, {
+    word: 'Condensed',
+    definition: 'Made denser or more concise; compressed or concentrated.'
+  }, {
+    word: 'Stolid',
+    definition: 'Calm, dependable, and showing little emotion or animation.'
+  }, {
+    word: 'Apathetic',
+    definition: 'Showing or feeling no interest, enthusiasm, or concern.'
   }]
 };
