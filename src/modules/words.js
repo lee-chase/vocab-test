@@ -291,9 +291,6 @@ export default {
     word: 'abundance',
     definition: 'plenty of something'
   }, {
-    word: 'arbitrary',
-    definition: ['choice based on random or without thought', 'unrestrained use of authority']
-  }, {
     word: 'monotonous',
     definition: 'something long and boring'
   }, {
@@ -439,9 +436,6 @@ export default {
   }, {
     word: 'Gaunt',
     definition: 'Lean and haggard, especially because of suffering, hunger, or age'
-  }, {
-    word: 'Flamboyant',
-    definition: 'Showy or exaggerated'
   }, {
     word: 'Arbitrary',
     definition: 'A decision taken without reason or system'
