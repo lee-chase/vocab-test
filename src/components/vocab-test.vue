@@ -52,6 +52,7 @@
         correctlyAnswered: false,
         foo: 0,
         score: 0,
+        lastFanfare: 0,
       };
     },
     components: {
@@ -109,7 +110,8 @@
       isCorrect(index, event) {
         if (index === this.questionAsked.item) {
           this.score++;
-          if (this.score % 50 === 0) {
+          if (this.score % 50 === 0 && this.score > this.lastFanfare) {
+            this.lastFanfare = this.score;
             this.$refs.fireworks.play();
           } else {
             this.$refs.letsgo.play();

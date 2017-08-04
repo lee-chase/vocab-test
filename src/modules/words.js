@@ -420,7 +420,7 @@ export default {
     definition: 'Wise or well travelled'
   }, {
     word: 'Quirky',
-    definition: 'Having or characterized by peculiar or unexpected traits or aspects.'
+    definition: 'Having or characterised by peculiar or unexpected traits or aspects.'
   }, {
     word: 'Austere',
     definition: ['Having a plain and unadorned appearance', 'Severe or strict in manner or attitude']
