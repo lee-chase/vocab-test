@@ -9,6 +9,9 @@
 
 <template>
   <div>
+    <transition name="party">
+      <img v-show="partyTime" src="../assets/images/party.gif" class="party-time"/>
+    </transition>
     <p class="question">
       What does <em class="word">{{questionAsked.list[this.questionAsked.item].word}}</em> mean?
     </p>
@@ -20,7 +23,6 @@
         </answer-button>
       </li>
     </ul>
-    <button @click="nextQuestion()" :disabled="!correctlyAnswered" class="next-question">Next word</button>
     <audio class="audio-letsgo" ref='letsgo'>
       <source :src="require('../assets/sounds/lets-go.mp3')" type="audio/mpeg">
     </audio>
@@ -50,6 +52,7 @@
         words: words.words,
         questionAsked: [],
         correctlyAnswered: false,
+        partyTime: false,
         foo: 0,
         score: 0,
         lastFanfare: 0,
@@ -100,6 +103,7 @@
           item
         };
         this.correctlyAnswered = false;
+        this.partyTime = false;
       },
       correctAnswer(index) {
         return this.questionAsked.list[index].correct;
@@ -110,13 +114,16 @@
       isCorrect(index, event) {
         if (index === this.questionAsked.item) {
           this.score++;
+          this.correctlyAnswered = true;
           if (this.score % 50 === 0 && this.score > this.lastFanfare) {
             this.lastFanfare = this.score;
+            this.partyTime = true;
             this.$refs.fireworks.play();
+            setTimeout(this.nextQuestion, 18000);
           } else {
             this.$refs.letsgo.play();
+            setTimeout(this.nextQuestion, 500);
           }
-          this.correctlyAnswered = true;
           this.$emit('correct');
         } else {
           this.score--;
@@ -149,7 +156,20 @@
 
 .answer {
   list-style: none;
-  margin: 10px 0;
+  margin: 32px 0;
+}
+
+.party-time {
+  width: 80%;
+  margin: 0 10%;
+  border-radius: 50px;
+}
+
+.party-enter-active, .party-leave-active {
+  transition: opacity .5s
+}
+.party-enter, .party-leave-to {
+  opacity: 0
 }
 
 .answer__button {
