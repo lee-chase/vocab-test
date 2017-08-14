@@ -51,24 +51,30 @@
 </script>
 
 <style lang="scss">
+  html {
+    height: 100%;
+  }
+
   body {
     margin: 0;
     padding: 0;
     font-size: 18px;
+    height: 100%;
   }
 
   #app {
     padding: 0;
+    height: 100%;
   }
 
   #home-page {
-    height: 100vh;
+    height: 100%;
     width: 100vw;
 
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    padding: 0 0 5vh;
+    padding: 0;
     box-sizing: border-box;
 
     background: url(~../assets/images/purple-sky.jpg);

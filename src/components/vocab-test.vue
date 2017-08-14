@@ -156,7 +156,7 @@
 
 .answer {
   list-style: none;
-  margin: 32px 0;
+  margin: 20px 0;
 }
 
 .party-time {
