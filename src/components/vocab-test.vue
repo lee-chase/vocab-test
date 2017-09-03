@@ -38,6 +38,9 @@
     <audio class="audio-trumpe" ref='trump'>
       <source :src="require('../assets/sounds/fail-trump.mp3')" type="audio/mpeg">
     </audio>
+    <!-- <div class="word-list">
+      <textarea v-text="sortedList"></textarea>
+    </div> -->
   </div>
 </template>
 
@@ -62,6 +65,12 @@
       'answer-button': answerButton
     },
     computed: {
+      sortedList() {
+        this.words.sort((a,b) => {
+          return a.word.localeCompare(b.word, 'en', 'i');
+        });
+        return JSON.stringify(this.words);
+      }
     },
     mounted() {
     },
@@ -143,6 +152,7 @@
   display: inline-block;
   border-radius: 3px;
   background-color: rgba(255, 255, 255, .7);
+  margin: 0;
 }
 
 .word {

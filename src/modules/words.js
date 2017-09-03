@@ -1,458 +1,482 @@
 export default {
   words: [{
-    word: 'financial',
-    definition: 'Things to do with money',
-    synonyms: ['money', 'budget']
+    "word": "abetting",
+    "definition": "help or encourage to commit crime"
   }, {
-    word: 'commodity',
-    definition: 'Raw material that can be bought or sold',
+    "word": "abrupt",
+    "definition": "rude or fast"
   }, {
-    word: 'invaluable',
-    definition: 'priceless, worth a lot',
-    synonyms: ['priceless']
+    "word": "Abundance",
+    "definition": "Something there is plenty of, perhaps more than needed"
   }, {
-    word: 'pertinent',
-    definition: 'relevant to something',
-    synonyms: ['relevant', 'appropriate'],
+    "word": "ally",
+    "definition": "A person or organisation that cooperates with or helps another in a particular activity."
   }, {
-    word: 'hefty',
-    definition: 'large and heavy',
+    "word": "Ambient",
+    "definition": "Relating to the immediate surroundings of something."
   }, {
-    word: 'substantial',
-    definition: 'of considerable/large size'
+    "word": "ambivalent",
+    "definition": "to not care about something or an outcome"
   }, {
-    word: 'nominal',
-    definition: 'of small or low value'
+    "word": "amble",
+    "definition": "to walk slowly"
   }, {
-    word: 'amble',
-    definition: 'to walk slowly'
+    "word": "amplify",
+    "definition": "increase size, strength or loudness"
   }, {
-    word: 'burden',
-    definition: 'a heavy load'
+    "word": "Apathetic",
+    "definition": "Showing or feeling no interest, enthusiasm, or concern."
   }, {
-    word: 'utter',
-    definition: ['express in sound or words', 'absolute or total']
+    "word": "apathy",
+    "definition": "lack of interest or concern"
   }, {
-    word: 'muffle',
-    definition: 'deaden/quieten sound'
+    "word": "appropriate",
+    "definition": ["the correct action/thing", "take something for yoursel, often without permission"]
   }, {
-    word: 'amplify',
-    definition: 'increase size, strength or loudness'
+    "word": "aptitude",
+    "definition": "A natural ability to do something, naturally bendy."
   }, {
-    word: 'tactful',
-    definition: 'avoiding giving offence'
+    "word": "Arbitrary",
+    "definition": "A decision taken without reason or system"
   }, {
-    word: 'sincere',
-    definition: 'truthful'
+    "word": "arduous",
+    "definition": "involving a lot of effort, difficult and tiring"
   }, {
-    word: 'ridicule',
-    definition: 'to make fun of'
+    "word": "arid",
+    "definition": "dry"
   }, {
-    word: 'commend',
-    definition: 'praise'
+    "word": "Austere",
+    "definition": ["Having a plain and unadorned appearance", "Severe or strict in manner or attitude"]
   }, {
-    word: 'abetting',
-    definition: 'help or encourage to commit crime'
+    "word": "autonomous",
+    "definition": "done separate without help"
   }, {
-    word: 'lucrative',
-    definition: 'very profitable'
+    "word": "averse",
+    "definition": "to not like something"
   }, {
-    word: 'vigourously',
-    definition: 'to do energetically'
+    "word": "barren",
+    "definition": "someone or thing without life e.g the moon"
   }, {
-    word: 'prosperous',
-    definition: 'wealthy'
+    "word": "barricade",
+    "definition": "a fence or barrier"
   }, {
-    word: 'synthetic',
-    definition: 'not natural'
+    "word": "bedlam",
+    "definition": "chaos"
   }, {
-    word: 'passive',
-    definition: 'inactive'
+    "word": "boisterous",
+    "definition": "rough, loud and noisy"
   }, {
-    word: 'sedate',
-    definition: ['slow object or being', 'send to sleep']
+    "word": "burden",
+    "definition": "a heavy load"
   }, {
-    word: 'liability',
-    definition: 'Something that makes a task harder'
+    "word": "censure",
+    "definition": "express severe disapproval"
   }, {
-    word: 'maverick',
-    definition: 'an independent or different minded person'
+    "word": "circumference",
+    "definition": "perimeter of a circle"
   }, {
-    word: 'renegade',
-    definition: 'someone who rebels possibly breaking rules'
+    "word": "commend",
+    "definition": "praise"
   }, {
-    word: 'craven',
-    definition: 'lacking in courage, a cowardly person'
+    "word": "commodity",
+    "definition": "Raw material that can be bought or sold"
   }, {
-    word: 'flustered',
-    definition: 'to have lost your calm'
+    "word": "concede",
+    "definition": "to accept the situation/defeat"
   }, {
-    word: 'poised',
-    definition: 'a state of balance/calmness'
+    "word": "Condensed",
+    "definition": "Made denser or more concise; compressed or concentrated."
   }, {
-    word: 'appropriate',
-    definition: ['the correct action/thing', 'take something for yoursel, often without permission']
+    "word": "contract",
+    "definition": ["make smaller", "catch an illness e.g. a cold", "document two or more agree to"]
   }, {
-    word: 'vulgar',
-    definition: 'rude'
+    "word": "copious",
+    "definition": "A plentiful/abundant supply"
   }, {
-    word: 'circumference',
-    definition: 'perimeter of a circle'
+    "word": "courteous",
+    "definition": "respectful and polite"
   }, {
-    word: 'diameter',
-    definition: 'width of a circle'
+    "word": "craven",
+    "definition": "lacking in courage, a cowardly person"
   }, {
-    word: 'radius',
-    definition: 'distance from the centre of a circle to the edge'
+    "word": "cynical",
+    "definition": "take advantage of others misfortune"
   }, {
-    word: 'snug',
-    definition: 'warm and cosy'
+    "word": "daunting",
+    "definition": "Seeming difficult to deal with in prospect; intimidating."
   }, {
-    word: 'murmur',
-    definition: 'a quiet sound or whisper'
+    "word": "dazed",
+    "definition": "shocked, unable to think or react properly"
   }, {
-    word: 'slovenly',
-    definition: 'untidy or dirty'
+    "word": "dearth",
+    "definition": "A scarcity or lack of something."
   }, {
-    word: 'pardon',
-    definition: 'to forgive'
+    "word": "Deficit",
+    "definition": "The amount of something below that which is needed"
   }, {
-    word: 'censure',
-    definition: 'express severe disapproval'
+    "word": "detest",
+    "definition": "a strong dislike or hate"
   }, {
-    word: 'slack',
-    definition: ['loose', 'take it easy at work']
+    "word": "diameter",
+    "definition": "width of a circle"
   }, {
-    word: 'legion',
-    definition: 'a great number of people'
+    "word": "diligent",
+    "definition": "Having or showing care and conscientiousness in one's work or duties."
   }, {
-    word: 'parlour',
-    definition: 'a shop that sells goods or services'
+    "word": "dire",
+    "definition": ["Extremely serious or urgent", "Of poor quality"]
   }, {
-    word: 'gorge',
-    definition: ['a deep narrow valley', 'eat until you cannot eat any more']
+    "word": "Droll",
+    "definition": "Curious or unusual in a way that provokes dry amusement"
   }, {
-    word: 'just',
-    definition: ['recently or barely completed something', 'right or balanced action usually punishment']
+    "word": "Endorse",
+    "definition": ["Declare one&apos;s public approval or support of", "Sign a cheque", "Add penalty points to a license"]
   }, {
-    word: 'detest',
-    definition: 'a strong dislike or hate'
+    "word": "engulf",
+    "definition": "surround or swallow up"
   }, {
-    word: 'ambivalent',
-    definition: 'to not care about something or an outcome'
+    "word": "entice",
+    "definition": "Attract or tempt by offering gifts or advantage."
   }, {
-    word: 'averse',
-    definition: 'to not like something'
+    "word": "Erected",
+    "definition": ["Rigidly upright or straight", "Put together and set upright (a building, wall, or other structure)"]
   }, {
-    word: 'courteous',
-    definition: 'respectful and polite'
+    "word": "exacting",
+    "definition": "demanding a lot of effort and precision"
   }, {
-    word: 'abrupt',
-    definition: 'rude or fast'
+    "word": "exploited",
+    "definition": "use or develop a resource, sometimes too much"
   }, {
-    word: 'tendency',
-    definition: 'more likely to happen or do'
+    "word": "financial",
+    "definition": "Things to do with money",
+    "synonyms": ["money", "budget"]
   }, {
-    word: 'exploited',
-    definition: 'use or develop a resource, sometimes too much'
+    "word": "flamboyant",
+    "definition": "extravagant"
   }, {
-    word: 'contract',
-    definition: ['make smaller', 'catch an illness e.g. a cold', 'document two or more agree to']
+    "word": "flippant",
+    "definition": "not showing serious or respectful attitude"
   }, {
-    word: 'frivolous',
-    definition: 'seeking pleasure in light hearted way'
+    "word": "flustered",
+    "definition": "to have lost your calm"
   }, {
-    word: 'gynaecology',
-    definition: 'branch of medicine for female reproductive system'
+    "word": "Forfeit",
+    "definition": "Punishment or charge for failing a task"
   }, {
-    word: 'insubordinate',
-    definition: 'Defiant of authority; disobedient to orders'
+    "word": "fractious",
+    "definition": "easily upset or annoyed"
   }, {
-    word: 'cynical',
-    definition: 'take advantage of others misfortune'
+    "word": "frigid",
+    "definition": "cold and stiff"
   }, {
-    word: 'oscillate',
-    definition: 'swing or vibrate rhythmically e.g. from side to side'
+    "word": "frivolous",
+    "definition": "seeking pleasure in light hearted way"
   }, {
-    word: 'vague',
-    definition: 'not clear'
+    "word": "furore",
+    "definition": "a sudden excited or angry reaction to something by a lot of people"
   }, {
-    word: 'barren',
-    definition: 'someone or thing without life e.g the moon'
+    "word": "Gaunt",
+    "definition": "Lean and haggard, especially because of suffering, hunger, or age"
   }, {
-    word: 'furore',
-    definition: 'a sudden excited or angry reaction to something by a lot of people'
+    "word": "gorge",
+    "definition": ["a deep narrow valley", "eat until you cannot eat any more"]
   }, {
-    word: 'bedlam',
-    definition: 'chaos'
+    "word": "gregarious",
+    "definition": "someone fond of social company"
   }, {
-    word: 'impoverished',
-    definition: 'poor'
+    "word": "gynaecology",
+    "definition": "branch of medicine for female reproductive system"
   }, {
-    word: 'arid',
-    definition: 'dry'
+    "word": "haphazard",
+    "definition": "not having an obvious plan or order"
   }, {
-    word: 'pompous',
-    definition: 'too serious or self important'
+    "word": "hefty",
+    "definition": "large and heavy"
   }, {
-    word: 'boisterous',
-    definition: 'rough, loud and noisy'
+    "word": "impoverished",
+    "definition": "poor"
   }, {
-    word: 'fractious',
-    definition: 'easily upset or annoyed'
+    "word": "industrious",
+    "definition": "Diligent and hard-working."
   }, {
-    word: 'insipid',
-    definition: 'plain and uninteresting'
+    "word": "insipid",
+    "definition": "plain and uninteresting"
   }, {
-    word: 'volatile',
-    definition: 'explosive or unstable'
+    "word": "insubordinate",
+    "definition": "Defiant of authority; disobedient to orders"
   }, {
-    word: 'autonomous',
-    definition: 'done separate without help'
+    "word": "invaluable",
+    "definition": "priceless, worth a lot",
+    "synonyms": ["priceless"]
   }, {
-    word: 'succinct',
-    definition: 'short and precise'
+    "word": "just",
+    "definition": ["recently or barely completed something", "right or balanced action usually punishment"]
   }, {
-    word: 'exacting',
-    definition: 'demanding a lot of effort and precision'
+    "word": "legion",
+    "definition": "a great number of people"
   }, {
-    word: 'precarious',
-    definition: 'something in a difficult or unstable position'
+    "word": "liability",
+    "definition": "Something that makes a task harder"
   }, {
-    word: 'engulf',
-    definition: 'surround or swallow up'
+    "word": "Light",
+    "definition": "Of entertainment that is not serious"
   }, {
-    word: 'barricade',
-    definition: 'a fence or barrier'
+    "word": "lucrative",
+    "definition": "very profitable"
   }, {
-    word: 'haphazard',
-    definition: 'not having an obvious plan or order'
+    "word": "maverick",
+    "definition": "an independent or different minded person"
   }, {
-    word: 'methodical',
-    definition: 'to take great care to get something right'
+    "word": "meagre",
+    "definition": "lacking in quantity or quality"
   }, {
-    word: 'flamboyant',
-    definition: 'extravagant'
-  },{
-    word: 'simmer',
-    definition: ['Heat/cook just below boiling in water', 'suppress anger']
+    "word": "methodical",
+    "definition": "to take great care to get something right"
   }, {
-    word: 'poach',
-    definition: ['steal poultry', 'cook in water']
+    "word": "Monotonous",
+    "definition": "Dull, tedious, and repetitious; lacking in variety and interest."
   }, {
-    word: 'roast',
-    definition: ['cook in oven using oil', 'a severe telling off']
+    "word": "morose",
+    "definition": "sad and ill tempered",
+    "synonyms": ["sullen"]
   }, {
-    word: 'aptitude',
-    definition: 'A natural ability to do something, naturally bendy.'
+    "word": "muffle",
+    "definition": "deaden/quieten sound"
   }, {
-    word: 'porous',
-    definition: 'absorbent like a sponge'
+    "word": "murmur",
+    "definition": "a quiet sound or whisper"
   }, {
-    word: 'permeable',
-    definition: 'material that allows liquids or gases through'
+    "word": "nominal",
+    "definition": "of small or low value"
   }, {
-    word: 'procure',
-    definition: 'to obtain something'
+    "word": "obtrude",
+    "definition": "become noticeable in an unwelcome way"
   }, {
-    word: 'trivial',
-    definition: 'of little value or importance'
+    "word": "operates",
+    "definition": "functions..."
   }, {
-    word: 'worldly',
-    definition: 'wise, sophisticated, well travelled'
+    "word": "oscillate",
+    "definition": "swing or vibrate rhythmically e.g. from side to side"
   }, {
-    word: 'theory',
-    definition: 'a model describing how something might work'
+    "word": "overt",
+    "definition": "Done or shown openly; plainly apparent."
   }, {
-    word: 'theoretical',
-    definition: 'something that might be possible'
+    "word": "pallid",
+    "definition": "pale, typically because of poor health"
   }, {
-    word: 'profound',
-    definition: 'something deeply meaningful'
+    "word": "pardon",
+    "definition": "to forgive"
   }, {
-    word: 'quirky',
-    definition: 'being peculiar or unconventional'
+    "word": "parlour",
+    "definition": "a shop that sells goods or services"
   }, {
-    word: 'flippant',
-    definition: 'not showing serious or respectful attitude'
+    "word": "passive",
+    "definition": "inactive/doing nothing"
   }, {
-    word: 'passive',
-    definition: 'inactive/doing nothing'
+    "word": "permeable",
+    "definition": "material that allows liquids or gases through"
   }, {
-    word: 'arduous',
-    definition: 'involving a lot of effort, difficult and tiring'
+    "word": "pertinent",
+    "definition": "relevant to something",
+    "synonyms": ["relevant", "appropriate"]
   }, {
-    word: 'forfeit',
-    definition: 'lose something as a consequence of another action'
+    "word": "Plant",
+    "definition": "Large industrial building e.g. power plant"
   }, {
-    word: 'dazed',
-    definition: 'shocked, unable to think or react properly'
+    "word": "poach",
+    "definition": ["steal poultry", "cook in water"]
   }, {
-    word: 'abundance',
-    definition: 'plenty of something'
+    "word": "poised",
+    "definition": "a state of balance/calmness"
   }, {
-    word: 'monotonous',
-    definition: 'something long and boring'
+    "word": "pompous",
+    "definition": "too serious or self important"
   }, {
-    word: 'ambient',
-    definition: 'relating to the immediate surroundings'
+    "word": "porous",
+    "definition": "absorbent like a sponge"
   }, {
-    word: 'morose',
-    definition: 'sad and ill tempered',
-    synonyms: ['sullen']
+    "word": "precarious",
+    "definition": "something in a difficult or unstable position"
   }, {
-    word: 'sullen',
-    definition: 'bad tempered and sulky',
-    synonyms: ['morose']
+    "word": "Procure",
+    "definition": "Obtain or purchase with care or effort"
   }, {
-    word: 'frigid',
-    definition: 'cold and stiff'
+    "word": "profound",
+    "definition": "something deeply meaningful"
   }, {
-    word: 'temperate',
-    definition: 'an area with mild temperatures'
+    "word": "prolific",
+    "definition": "someone or thing producing a lot of output"
   }, {
-    word: 'quizzical',
-    definition: 'someone experiencing mild or amused puzzlement'
+    "word": "prosperous",
+    "definition": "wealthy"
   }, {
-    word: 'gregarious',
-    definition: 'someone fond of social company'
+    "word": "Purchase",
+    "definition": "Get a grip on something or buy something"
   }, {
-    word: 'pallid',
-    definition: 'pale, typically because of poor health'
+    "word": "Quirky",
+    "definition": "Having or characterised by peculiar or unexpected traits or aspects."
   }, {
-    word: 'radiant',
-    definition: 'shining or glowing brightly'
+    "word": "quizzical",
+    "definition": "someone experiencing mild or amused puzzlement"
   }, {
-    word: 'prolific',
-    definition: 'someone or thing producing a lot of output'
+    "word": "radiant",
+    "definition": "shining or glowing brightly"
   }, {
-    word: 'apathy',
-    definition: 'lack of interest or concern'
+    "word": "radius",
+    "definition": "distance from the centre of a circle to the edge"
   }, {
-    word: 'stolid',
-    definition: 'calm and dependable'
+    "word": "renegade",
+    "definition": "someone who rebels possibly breaking rules"
   }, {
-    word: 'obtrude',
-    definition: 'become noticeable in an unwelcome way'
-  },{
-    word: 'operates',
-    definition: 'functions...',
-  },{
-    word: 'concede',
-    definition: 'to accept the situation/defeat',
-  },{
-    word: 'daunting',
-    definition: 'Seeming difficult to deal with in prospect; intimidating.',
-  },{
-    word: 'dire',
-    definition: ['Extremely serious or urgent', 'Of poor quality'],
-  },{
-    word: 'talon',
-    definition: 'A claw, especially one belonging to a bird of prey.',
-  },{
-    word: 'ally',
-    definition: 'A person or organisation that cooperates with or helps another in a particular activity.',
-  },{
-    word: 'reserved',
-    definition: ['Slow to reveal emotion or opinions.', 'Kept specially for a particular person.'],
-  },{
-    word: 'industrious',
-    definition: 'Diligent and hard-working.',
-  },{
-    word: 'stunted',
-    definition: 'Prevent from growing or developing properly.',
-  },{
-    word: 'meagre',
-    definition: 'lacking in quantity or quality',
-  },{
-    word: 'copious',
-    definition: 'A plentiful/abundant supply',
-  },{
-    word: 'dearth',
-    definition: 'A scarcity or lack of something.',
-  },{
-    word: 'entice',
-    definition: 'Attract or tempt by offering gifts or advantage.',
-  },{
-    word: 'overt',
-    definition: 'Done or shown openly; plainly apparent.',
+    "word": "reserved",
+    "definition": ["Slow to reveal emotion or opinions.", "Kept specially for a particular person."]
   }, {
-    word: 'diligent',
-    definition: "Having or showing care and conscientiousness in one's work or duties."
+    "word": "Resilient",
+    "definition": "Able to withstand or recover quickly from difficult conditions"
   }, {
-    word: 'Solely',
-    definition: 'Not involving anyone or anything else; only.'
+    "word": "ridicule",
+    "definition": "to make fun of"
   }, {
-    word: 'Erected',
-    definition: [
-      'Rigidly upright or straight',
-      'Put together and set upright (a building, wall, or other structure)'
-    ]
+    "word": "roast",
+    "definition": ["cook in oven using oil", "a severe telling off"]
   }, {
-    word: 'Solely',
-    definition: 'Not involving anyone or anything else; only.'
+    "word": "sedate",
+    "definition": ["slow object or being", "send to sleep"]
   }, {
-    word: 'Resilient',
-    definition: 'Able to withstand or recover quickly from difficult conditions'
+    "word": "simmer",
+    "definition": ["Heat/cook just below boiling in water", "suppress anger"]
   }, {
-    word: 'Endorse',
-    definition: ['Declare one&apos;s public approval or support of',
-     'Sign a cheque',
-     'Add penalty points to a license'
-   ],
+    "word": "sincere",
+    "definition": "truthful"
   }, {
-    word: 'Procure',
-    definition: 'Obtain or purchase with care or effort'
+    "word": "slack",
+    "definition": ["loose", "take it easy at work"]
   }, {
-    word: 'Purchase',
-    definition: 'Get a grip on something or buy something'
+    "word": "slovenly",
+    "definition": "untidy or dirty"
   }, {
-    word: 'Plant',
-    definition: 'Large industrial building e.g. power plant'
+    "word": "snug",
+    "definition": "warm and cosy"
   }, {
-    word: 'Light',
-    definition: 'Of entertainment that is not serious'
+    "word": "Solely",
+    "definition": "Not involving anyone or anything else; only."
   }, {
-    word: 'Forfeit',
-    definition: 'Punishment or charge for failing a task'
+    "word": "Stolid",
+    "definition": "Calm, dependable, and showing little emotion or animation."
   }, {
-    word: 'Worldly',
-    definition: 'Wise or well travelled'
+    "word": "stunted",
+    "definition": "Prevent from growing or developing properly."
   }, {
-    word: 'Quirky',
-    definition: 'Having or characterised by peculiar or unexpected traits or aspects.'
+    "word": "substantial",
+    "definition": "of considerable/large size"
   }, {
-    word: 'Austere',
-    definition: ['Having a plain and unadorned appearance', 'Severe or strict in manner or attitude']
+    "word": "succinct",
+    "definition": "short and precise, especially of words"
   }, {
-    word: 'Abundance',
-    definition: 'Something there is plenty of, perhaps more than needed'
+    "word": "sullen",
+    "definition": "bad tempered and sulky",
+    "synonyms": ["morose"]
   }, {
-    word: 'Deficit',
-    definition: 'The amount of something below that which is needed'
+    "word": "synthetic",
+    "definition": "not natural"
   }, {
-    word: 'Gaunt',
-    definition: 'Lean and haggard, especially because of suffering, hunger, or age'
+    "word": "tactful",
+    "definition": "avoiding giving offence"
   }, {
-    word: 'Arbitrary',
-    definition: 'A decision taken without reason or system'
+    "word": "talon",
+    "definition": "A claw, especially one belonging to a bird of prey."
   }, {
-    word: 'Monotonous',
-    definition: 'Dull, tedious, and repetitious; lacking in variety and interest.'
+    "word": "temperate",
+    "definition": "an area with mild temperatures"
   }, {
-    word: 'Ambient',
-    definition: 'Relating to the immediate surroundings of something.'
+    "word": "tendency",
+    "definition": "more likely to happen or do"
   }, {
-    word: 'Droll',
-    definition: 'Curious or unusual in a way that provokes dry amusement'
+    "word": "theoretical",
+    "definition": "something that might be possible"
   }, {
-    word: 'Condensed',
-    definition: 'Made denser or more concise; compressed or concentrated.'
+    "word": "theory",
+    "definition": "a model describing how something might work"
   }, {
-    word: 'Stolid',
-    definition: 'Calm, dependable, and showing little emotion or animation.'
+    "word": "trivial",
+    "definition": "of little value or importance"
   }, {
-    word: 'Apathetic',
-    definition: 'Showing or feeling no interest, enthusiasm, or concern.'
+    "word": "utter",
+    "definition": ["express in sound or words", "absolute or total"]
+  }, {
+    "word": "vague",
+    "definition": "not clear"
+  }, {
+    "word": "vigourously",
+    "definition": "to do energetically"
+  }, {
+    "word": "volatile",
+    "definition": "explosive or unstable"
+  }, {
+    "word": "vulgar",
+    "definition": "rude"
+  }, {
+    "word": "worldly",
+    "definition": "wise, sophisticated, well travelled"
+  }, {
+    word: "deter",
+    definition: "To put off or disuade"
+  }, {
+    word: "taut",
+    definition: "Stretched or pulled tight"
+  }, {
+    word: "wane",
+    definition: "To become weaker or smaller"
+  }, {
+    word: "meanders",
+    definition: "Wander/winds at random"
+  }, {
+    word: "valour",
+    definition: "Great courage in the face of danger"
+  }, {
+    word: "virtuous",
+    definition: "Having or showing high moral standards"
+  }, {
+    word: "hostile",
+    definition: "Showing or feeling opposition or dislike; unfriendly/enemy"
+  }, {
+    word: "adamant",
+    definition: "Refusing to be persuaded or to change one's mind"
+  }, {
+    word: "lenient",
+    definition: "Be more merciful or tolerant than expected"
+  }, {
+    word: "benevolent",
+    definition: "Well meaning and kindly"
+  }, {
+    word: "Naive",
+    definition: "Lack expierience, wisdom or judgment"
+  }, {
+    word: "Rind",
+    definition: "Tough skin of some fruit, especially citrus"
+  }, {
+    word: "earie",
+    definition: "A large nest of an eagle or other bird of prey, built high in a tree or on a cliff"
+  }, {
+    word: "mundane",
+    definition: "Lacking interest or excitement; dull"
+  }, {
+    word: "plucky",
+    definition: "Having or showing determined courage in the face of difficulties"
+  }, {
+    word: "cynical",
+    definition: ["Believing that people are motivated purely by self-interest", "Doubtful as to whether something will happen or whether it is worthwhile"]
+  }, {
+    word: "fleeting",
+    definition: "Lasting for a short time"
+  }, {
+    word: "din",
+    definition: "A loud, unpleasent, and prolonged noise"
+  }, {
+    word: "loiter",
+    definition: "Stand around or move slowly with no apparent purpose"
+  }, {
+    word: "Prospective",
+    definition: "Likely to happen at a future date"
   }]
 };

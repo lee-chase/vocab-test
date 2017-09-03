@@ -9,7 +9,7 @@
 <template>
   <div class="page-header">
     <div class="score-card">
-      Your score: {{score}}
+      Score: {{score}}
     </div>
     <div class="score-card">
       Correct: {{correct}}
@@ -37,8 +37,8 @@
     justify-content: center;
   }
   .score-card {
-    padding: 10px;
-    margin: 10px;
+    padding: 6px;
+    margin: 4px;
     border-radius: 3px;
     background-color: rgba(255, 255, 255, .7);
   }
